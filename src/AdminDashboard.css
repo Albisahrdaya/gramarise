@@ -1,0 +1,322 @@
+
+.admin-page {
+  min-height: 100vh;
+  background: #f6f8f4;
+  color: #1d3025;
+}
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 7%;
+  background: white;
+  border-bottom: 1px solid #e2e9e0;
+}
+
+.admin-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #246b45;
+  font-size: 24px;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.admin-logout,
+.admin-refresh,
+.admin-approve,
+.admin-reject {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 14px;
+  border-radius: 9px;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.admin-logout,
+.admin-refresh {
+  background: white;
+  color: #405749;
+  border: 1px solid #d8e0d7;
+}
+
+.admin-content {
+  width: min(900px, calc(100% - 36px));
+  margin: 38px auto;
+  padding-bottom: 50px;
+}
+
+.admin-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #607367;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.admin-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 28px 0 9px;
+  color: #398057;
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 1.3px;
+}
+
+.admin-content > h1 {
+  margin: 0;
+  font-size: clamp(30px, 5vw, 42px);
+  letter-spacing: -1px;
+}
+
+.admin-intro {
+  color: #6c7b70;
+  line-height: 1.7;
+}
+
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 25px 0;
+}
+
+.admin-stats > div {
+  display: grid;
+  gap: 9px;
+  padding: 19px;
+  background: white;
+  border: 1px solid #e1e8df;
+  border-radius: 13px;
+}
+
+.admin-stats span {
+  color: #6c7b70;
+  font-size: 13px;
+}
+
+.admin-stats strong {
+  font-size: 28px;
+}
+
+.admin-toolbar {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 14px;
+  margin: 25px 0 18px;
+}
+
+.admin-toolbar label {
+  display: grid;
+  gap: 7px;
+  color: #52675a;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.admin-toolbar select {
+  min-width: 180px;
+  padding: 11px;
+  border: 1px solid #d8e0d7;
+  border-radius: 9px;
+  background: white;
+  color: #1d3025;
+  font: inherit;
+}
+
+.admin-job-card,
+.admin-empty {
+  margin-top: 16px;
+  padding: 23px;
+  background: white;
+  border: 1px solid #e1e8df;
+  border-radius: 15px;
+}
+
+.admin-job-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 16px;
+}
+
+.admin-job-heading h2 {
+  margin: 12px 0 5px;
+  font-size: 21px;
+}
+
+.admin-company {
+  margin-top: 0;
+  color: #607367;
+}
+
+.admin-job-type {
+  color: #607367;
+  font-size: 13px;
+}
+
+.admin-status {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 20px;
+  background: #fff3d8;
+  color: #855d12;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.admin-status.status-published {
+  background: #eaf5ec;
+  color: #246b45;
+}
+
+.admin-status.status-rejected,
+.admin-status.status-closed {
+  background: #f5e9e8;
+  color: #943f38;
+}
+
+.admin-job-card > p {
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.admin-description {
+  white-space: pre-wrap;
+}
+
+.admin-date {
+  color: #718076;
+  font-size: 12px;
+}
+
+.admin-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.admin-approve {
+  background: #246b45;
+  color: white;
+  border: 1px solid #246b45;
+}
+
+.admin-reject {
+  background: white;
+  color: #a33932;
+  border: 1px solid #e6c9c6;
+}
+
+.admin-approve:disabled,
+.admin-reject:disabled,
+.admin-refresh:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.admin-error,
+.admin-notice {
+  padding: 13px;
+  border-radius: 9px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.admin-error {
+  background: #fff0ef;
+  color: #a52a25;
+}
+
+.admin-notice {
+  background: #eaf5ec;
+  color: #246b45;
+}
+
+.admin-empty {
+  text-align: center;
+  color: #607367;
+}
+
+.admin-empty h2 {
+  color: #1d3025;
+}
+
+@media (max-width: 560px) {
+  .admin-header {
+    padding: 17px;
+  }
+
+  .admin-brand {
+    font-size: 21px;
+  }
+
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-stats > div {
+    padding: 15px;
+  }
+
+  .admin-toolbar,
+  .admin-job-heading {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .admin-toolbar select {
+    width: 100%;
+  }
+
+  .admin-job-card {
+    padding: 18px;
+  }
+}
+
+.employer-review-section {
+  margin-top: 56px;
+  padding-top: 32px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.employer-review-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.employer-note-label {
+  display: block;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.employer-note-label textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font: inherit;
+  resize: vertical;
+}
+

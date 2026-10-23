@@ -1,0 +1,202 @@
+
+.employer-registration-page {
+  min-height: 100vh;
+  background: #f5f7f4;
+  color: #183329;
+}
+
+.employer-registration-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 7%;
+  background: #fff;
+  border-bottom: 1px solid #e5ebe5;
+}
+
+.employer-registration-brand {
+  color: #176b48;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.employer-registration-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.employer-registration-header nav a {
+  color: #38574a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.employer-registration-hero {
+  padding: 56px 7% 44px;
+  background: #e8f3e9;
+}
+
+.employer-registration-eyebrow {
+  color: #28734f;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.employer-registration-hero h1 {
+  margin: 12px 0;
+  font-size: clamp(2rem, 5vw, 3.3rem);
+}
+
+.employer-registration-hero > p:last-child {
+  max-width: 650px;
+  color: #52695c;
+  line-height: 1.7;
+}
+
+.employer-registration-content {
+  width: min(100% - 32px, 760px);
+  margin: 36px auto 70px;
+}
+
+.employer-registration-card {
+  padding: clamp(20px, 4vw, 36px);
+  background: #fff;
+  border: 1px solid #e2e9e2;
+  border-radius: 18px;
+  box-shadow: 0 8px 28px rgb(26 60 40 / 5%);
+}
+
+.employer-registration-card-heading h2 {
+  margin: 0 0 8px;
+}
+
+.employer-registration-card-heading p {
+  margin-bottom: 26px;
+  color: #65756a;
+  line-height: 1.7;
+}
+
+.employer-registration-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.employer-registration-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 650;
+  font-size: 0.92rem;
+}
+
+.employer-registration-form input,
+.employer-registration-form select,
+.employer-registration-form textarea {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 12px 13px;
+  border: 1px solid #d5dfd6;
+  border-radius: 9px;
+  background: #fff;
+  color: #183329;
+  font: inherit;
+  font-weight: 400;
+}
+
+.employer-registration-form input:focus,
+.employer-registration-form select:focus,
+.employer-registration-form textarea:focus {
+  outline: 2px solid #83b99b;
+  outline-offset: 1px;
+}
+
+.employer-registration-form label:has(textarea),
+.employer-submit-button {
+  grid-column: 1 / -1;
+}
+
+.employer-registration-form textarea {
+  resize: vertical;
+}
+
+.employer-submit-button {
+  padding: 14px 18px;
+  border: 0;
+  border-radius: 10px;
+  background: #176b48;
+  color: #fff;
+  font: inherit;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.employer-submit-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.employer-review-status,
+.employer-form-error,
+.employer-form-notice {
+  margin: 18px 0;
+  padding: 13px 15px;
+  border-radius: 9px;
+  line-height: 1.6;
+}
+
+.employer-review-status {
+  background: #f0f2f0;
+  color: #526258;
+}
+
+.employer-review-status.status-pending {
+  background: #fff2d6;
+  color: #895a00;
+}
+
+.employer-review-status.status-approved {
+  background: #ddf5e5;
+  color: #176b3b;
+}
+
+.employer-review-status.status-rejected,
+.employer-form-error {
+  background: #fce7e7;
+  color: #a32e2e;
+}
+
+.employer-form-notice {
+  background: #ddf5e5;
+  color: #176b3b;
+}
+
+.employer-loading {
+  padding: 40px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .employer-registration-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .employer-registration-hero {
+    padding: 40px 6%;
+  }
+
+  .employer-registration-form {
+    grid-template-columns: 1fr;
+  }
+
+  .employer-registration-form label:has(textarea),
+  .employer-submit-button {
+    grid-column: auto;
+  }
+}

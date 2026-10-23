@@ -1,0 +1,214 @@
+
+.received-page {
+  min-height: 100vh;
+  background: #f5f7f4;
+  color: #183329;
+  font-family: inherit;
+}
+
+.received-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 7%;
+  background: #fff;
+  border-bottom: 1px solid #e5ebe5;
+}
+
+.received-brand {
+  color: #176b48;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.received-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.received-header nav a {
+  color: #38574a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.received-hero {
+  padding: 64px 7% 48px;
+  background: #e8f3e9;
+}
+
+.received-eyebrow,
+.received-label {
+  color: #28734f;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.received-hero h1 {
+  margin: 12px 0;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+}
+
+.received-hero > p:last-child {
+  max-width: 620px;
+  line-height: 1.7;
+  color: #52695c;
+}
+
+.received-content {
+  width: min(100% - 40px, 900px);
+  margin: 36px auto 70px;
+}
+
+.received-list {
+  display: grid;
+  gap: 20px;
+}
+
+.received-card,
+.received-empty {
+  padding: 26px;
+  background: #fff;
+  border: 1px solid #e2e9e2;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgb(26 60 40 / 5%);
+}
+
+.received-card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.received-card h2 {
+  margin: 8px 0;
+  font-size: 1.3rem;
+}
+
+.received-status {
+  padding: 6px 11px;
+  border-radius: 30px;
+  background: #f0f2f0;
+  color: #526258;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.received-status.status-pending {
+  background: #fff2d6;
+  color: #895a00;
+}
+
+.received-status.status-accepted {
+  background: #ddf5e5;
+  color: #176b3b;
+}
+
+.received-status.status-declined {
+  background: #fce7e7;
+  color: #a32e2e;
+}
+
+.received-request-message {
+  margin: 20px 0;
+  color: #40584a;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.received-date {
+  color: #7b8a80;
+  font-size: 0.85rem;
+}
+
+.received-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.received-actions button {
+  padding: 11px 22px;
+  border: 0;
+  border-radius: 9px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.received-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.received-accept {
+  background: #176b48;
+  color: white;
+}
+
+.received-decline {
+  background: #fce7e7;
+  color: #a32e2e;
+}
+
+.received-empty {
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.received-empty p {
+  line-height: 1.7;
+  color: #65756a;
+}
+
+.received-empty a {
+  display: inline-block;
+  margin-top: 12px;
+  color: #176b48;
+  font-weight: 700;
+}
+
+.received-alert,
+.received-notice,
+.received-message {
+  padding: 14px 16px;
+  border-radius: 10px;
+  line-height: 1.6;
+}
+
+.received-alert {
+  background: #fce7e7;
+  color: #a32e2e;
+}
+
+.received-notice {
+  background: #ddf5e5;
+  color: #176b3b;
+}
+
+@media (max-width: 600px) {
+  .received-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .received-hero {
+    padding: 42px 6%;
+  }
+
+  .received-card {
+    padding: 20px;
+  }
+
+  .received-card-heading {
+    flex-direction: column;
+  }
+}

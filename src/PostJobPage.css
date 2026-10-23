@@ -1,0 +1,79 @@
+
+.post-job-page {
+  min-height: 100vh;
+  background: #f6f8f4;
+  color: #1d3025;
+}
+
+.post-job-content {
+  width: min(650px, calc(100% - 36px));
+  margin: 38px auto;
+  padding-bottom: 50px;
+}
+
+.post-job-content h1 {
+  margin: 0;
+  font-size: clamp(30px, 5vw, 40px);
+  letter-spacing: -1px;
+}
+
+.post-job-intro {
+  color: #6c7b70;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.post-job-form {
+  display: grid;
+  gap: 18px;
+  padding: 28px;
+  border: 1px solid #e1e8df;
+  border-radius: 16px;
+  background: white;
+}
+
+.post-job-form label {
+  display: grid;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.post-job-form input,
+.post-job-form select,
+.post-job-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d8e0d7;
+  border-radius: 9px;
+  background: white;
+  color: #1d3025;
+  font: inherit;
+  font-size: 14px;
+}
+
+.post-job-form textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.post-job-form input:focus,
+.post-job-form select:focus,
+.post-job-form textarea:focus {
+  outline: 2px solid #a6d7b5;
+  border-color: #398057;
+}
+
+.post-job-note {
+  margin: 0;
+  color: #6c7b70;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  .post-job-form {
+    padding: 20px;
+  }
+}
